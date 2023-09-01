@@ -5,4 +5,4 @@ Steps:
 - Scrape the web using Selenium and BeautifulSoap
 - Clean data using pandas and numpy
 - Train Model
-- Build a simple app
+- Build car price predictor app
