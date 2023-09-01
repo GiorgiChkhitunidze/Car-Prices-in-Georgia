@@ -21,11 +21,10 @@ cars_df = pd.DataFrame(columns=columns)
 # visited_links = []
 
 for page in tqdm(range(281+350+190, 1001)):
-    url = f"https://www.myauto.ge/ka/s/iyideba-manqanebi-sedani-jipi-kupe-hechbeqi-kabrioleti-universali-hechbeqi-universali-sedani-universali-sedani-\
-    jipi-kabrioleti-kabrioleti-bmw-chevrolet-ford-honda-hyundai-kia-lexus-mazda-mercedes-benz-mitsubishi-nissan-subaru-toyota-volkswagen?vehicleType=0&\
-    bargainType=0&mansNModels=3-5-12-14-16-20-23-24-25-29-30-39-41-42&vehicleCats=1.5.4.2.6.3.29.30.13.15.66&currId=1&mileageType=1&locations=2.3.4.7.15\
-    .30.113.52.37.36.38.39.40.31.5.41.44.47.48.53.54.8.16.6.14.13.12.11.10.9.55.56.57.59.58.61.62.63.64.66.71.72.74.75.76.77.78.80.81.82.83.84.85.86.87.\
-    88.91.96.97.101.109&hideDealPrice=1&sort=1&page={page}"
+    url = f"https://www.myauto.ge/ka/s/iyideba-manqanebi-sedani-jipi-kupe-hechbeqi-kabrioleti-universali-hechbeqi-universali-sedani-universali-sedani-jipi-kabrioleti-kabrioleti-bmw-\
+        chevrolet-ford-honda-hyundai-kia-lexus-mazda-mercedes-benz-mitsubishi-nissan-subaru-toyota-volkswagen?vehicleType=0&bargainType=0&mansNModels=3-5-12-14-16-20-23-24-25-29-30-39-\
+            41-42&vehicleCats=1.5.4.2.6.3.29.30.13.15.66&currId=1&mileageType=1&locations=2.3.4.7.15%5C.30.113.52.37.36.38.39.40.31.5.41.44.47.48.53.54.8.16.6.14.13.12.11.10.9.55.56.57.\
+                59.58.61.62.63.64.66.71.72.74.75.76.77.78.80.81.82.83.84.85.86.87.%5C88.91.96.97.101.109&hideDealPrice=1&sort=1&page={page}"
     options = webdriver.ChromeOptions()
     options.add_argument('start-maximized')
     options.add_experimental_option('excludeSwitches', ['enable-automation'])
