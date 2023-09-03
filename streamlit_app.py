@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-df = pd.read_csv('Data\cars-cleaned.csv', index_col='Id')
+df = pd.read_csv('cars-cleaned.csv', index_col='Id')
 
 # set up page name, icon, layout and sidebar behaviour
 st.set_page_config(
